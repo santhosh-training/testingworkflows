@@ -6,6 +6,8 @@ env:
   IBM_CLOUD_CF_ORG: ${{ secrets.IBM_CLOUD_CF_ORG }}
   IBM_CLOUD_CF_SPACE: ${{ secrets.IBM_CLOUD_CF_SPACE }}
 on:
+  push:
+    branch: master
   workflow_dispatch
 jobs:
   do-it:
