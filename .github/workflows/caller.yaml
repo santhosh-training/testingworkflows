@@ -31,4 +31,4 @@ jobs:
       IBM_CLOUD_CF_API: ${{ secrets.IBM_CLOUD_CF_API }}
       IBM_CLOUD_CF_ORG: ${{ secrets.IBM_CLOUD_CF_ORG }}
       IBM_CLOUD_CF_SPACE: ${{ secrets.IBM_CLOUD_CF_SPACE }}
-   #  needs: build-called
+    needs: build-called
