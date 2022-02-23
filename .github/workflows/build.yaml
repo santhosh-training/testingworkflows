@@ -40,7 +40,8 @@ jobs:
       - name: upload artifact to jfrog 
         uses: jfrog/setup-jfrog-cli@v1
         env:
-           JF_ARTIFACTORY_1: ${{ secrets.artifactory_token_1 }}
+           # JF_ARTIFACTORY_1: ${{ secrets.artifactory_token_1 }}
+           JF_ARTIFACTORY_1: eyJ2ZXJzaW9uIjoyLCJ1cmwiOiJodHRwczovL3ByaWFyLmpmcm9nLmlvLyIsImFydGlmYWN0b3J5VXJsIjoiaHR0cHM6Ly9wcmlhci5qZnJvZy5pby9hcnRpZmFjdG9yeS8iLCJkaXN0cmlidXRpb25VcmwiOiJodHRwczovL3ByaWFyLmpmcm9nLmlvL2Rpc3RyaWJ1dGlvbi8iLCJ4cmF5VXJsIjoiaHR0cHM6Ly9wcmlhci5qZnJvZy5pby94cmF5LyIsIm1pc3Npb25Db250cm9sVXJsIjoiaHR0cHM6Ly9wcmlhci5qZnJvZy5pby9tYy8iLCJwaXBlbGluZXNVcmwiOiJodHRwczovL3ByaWFyLmpmcm9nLmlvL3BpcGVsaW5lcy8iLCJ1c2VyIjoia2hhcmF0cmFtZXNoQGdtYWlsLmNvbSIsInBhc3N3b3JkIjoiQVBMdmphb3hGVzNQOUNFNWRuQWhtQ3Y2RzkiLCJ0b2tlblJlZnJlc2hJbnRlcnZhbCI6NjAsInNlcnZlcklkIjoicHJpYXIifQ==
       - run: |
             jfrog --version
             jfrog c use priar
