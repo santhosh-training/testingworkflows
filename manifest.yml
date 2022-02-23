@@ -7,4 +7,5 @@ applications:
   - apic.mybluemix.net            
   
   host: vadapav
-  path: /home/runner/work/testingworkflows/testingworkflows/target/hello-spring-cloud-0.0.1.BUILD-SNAPSHOT.jar
+  path: /target/hello-spring-cloud-0.0.1.BUILD-SNAPSHOT.jar
+  path: hello-spring-cloud-0.0.1.BUILD-SNAPSHOT.jar
