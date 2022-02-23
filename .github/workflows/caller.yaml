@@ -21,7 +21,7 @@ jobs:
       JF_ARTIFACTORY_1: ${{ secrets.artifactory_token_1 }}
   deploy-called:
     uses: ./.github/workflows/deploy.yaml
-    with:
+    secrets:
       JF_ARTIFACTORY_1: ${{ secrets.artifactory_token_1 }}
       IBM_CLOUD_API_KEY: ${{ secrets.IBM_CLOUD_API_KEY }}
       IBM_CLOUD_CF_API: ${{ secrets.IBM_CLOUD_CF_API }}
