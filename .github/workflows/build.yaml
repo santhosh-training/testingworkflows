@@ -32,6 +32,10 @@ jobs:
         with:
           name: java-app
           path: '${{ github.workspace }}/target/*.jar'
+      - run: |
+          echo ${{github.workspace}}
+          id
+          pwd
 
       - name: upload artifact to jfrog 
         uses: jfrog/setup-jfrog-cli@v1
@@ -42,4 +46,4 @@ jobs:
             jfrog c use priar
             jfrog rt ping
             echo '${{ github.workspace }}/target/*.jar'
-            jfrog rt upload --flat=false '${{ github.workspace }}/target/' priar/
+            jfrog rt upload --flat=false '${{ github.workspace }}/target/*.jar' priar/
