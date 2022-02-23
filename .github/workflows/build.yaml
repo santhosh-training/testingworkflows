@@ -26,8 +26,8 @@ jobs:
         env:
            JF_ARTIFACTORY_1: ${{ secrets.artifactory_token_1 }}
       - run: |
-          jfrog --version
-          jfrog c use priar
-          jfrog rt ping
-          echo '${{ github.workspace }}/target/*.jar'
-          jfrog rt upload  '${{ github.workspace }}/target/*.jar' priar/
+            jfrog --version
+            jfrog c use priar
+            jfrog rt ping
+            echo '${{ github.workspace }}/target/*.jar'
+            jfrog rt upload  '${{ github.workspace }}/target/*.jar' priar/
