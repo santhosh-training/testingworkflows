@@ -27,9 +27,12 @@ jobs:
           jfrog c use priar
           jfrog rt ping
           echo '${{ github.workspace }}/target/*.jar'
-          jfrog rt download --flat=false priar/home/runner/work/testingworkflows/testingworkflows/target/*.jar /home/runner/work/testingworkflows/testingworkflows/target/
+          jfrog rt download --flat=false priar/home/runner/work/testingworkflows/testingworkflows/target/*.jar .
           echo "================================================"
+          ls -l 
           ls -l /home/runner/work/testingworkflows/testingworkflows/target/
+          pwd
+          
      # - uses: actions/checkout@v2
       - name: Deploy to IBM Cloud Foundry
         # You may pin to the exact commit or the version.
