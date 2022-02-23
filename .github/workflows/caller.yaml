@@ -11,10 +11,7 @@ jobs:
         run: echo Hello, world-Looking Good11!
 
   build-called:
-  
-    uses: ./.github/workflows/build.yaml
-    
+      uses: ./.github/workflows/build.yaml
   deploy-called:
-  
     uses: ./.github/workflows/deploy.yml
     needs: build-called
