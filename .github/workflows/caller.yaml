@@ -1,0 +1,20 @@
+name: Reusable Workflow user
+  
+on:
+  workflow_dispatch
+jobs:
+  do-it:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Run a one-line script
+        run: echo Hello, world-Looking Good11!
+
+  build-called:
+  
+    uses: rameshkharat/cf/.github/workflows/build.yml@master
+    
+  deploy-called:
+  
+    uses: rameshkharat/called-workflow-2/.github/workflows/deploy.yml@master
+    needs: build-called
