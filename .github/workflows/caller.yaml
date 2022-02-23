@@ -12,9 +12,9 @@ jobs:
 
   build-called:
   
-    uses: kharatramesh/testingworkflows/.github/workflows/build.yaml@main
+    uses: kharatramesh/testingworkflows/.github/workflows/build.yaml@master
     
   deploy-called:
   
-    uses: kharatramesh/testingworkflows/.github/workflows/deploy.yml@main
+    uses: kharatramesh/testingworkflows/.github/workflows/deploy.yml@master
     needs: build-called
