@@ -7,8 +7,8 @@ env:
   IBM_CLOUD_CF_SPACE: ${{ secrets.IBM_CLOUD_CF_SPACE }}
 on:
   push:
-    branch: master
-  workflow_dispatch
+    branches:
+      - master
 jobs:
   do-it:
     runs-on: ubuntu-latest
