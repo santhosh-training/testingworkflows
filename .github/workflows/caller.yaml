@@ -12,9 +12,9 @@ jobs:
 
   build-called:
   
-    uses: .github/workflows/build.yaml@master
+    uses: ./.github/workflows/build.yaml
     
   deploy-called:
   
-    uses: .github/workflows/deploy.yml@master
+    uses: ./.github/workflows/deploy.yml
     needs: build-called
