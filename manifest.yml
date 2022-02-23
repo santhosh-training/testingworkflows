@@ -8,4 +8,4 @@ applications:
   
   host: vadapav
   # path: /target/hello-spring-cloud-0.0.1.BUILD-SNAPSHOT.jar
-  path: priar/home/runner/work/testingworkflows/testingworkflows/target/hello-spring-cloud-0.0.1.BUILD-SNAPSHOT.jar
+  path:  /home/runner/work/testingworkflows/testingworkflows/target/hello-spring-cloud-0.0.1.BUILD-SNAPSHOT.jar
