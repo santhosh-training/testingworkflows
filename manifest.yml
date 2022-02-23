@@ -1,0 +1,11 @@
+---
+applications:
+- name: hello-spring-cloud
+  instances: 1
+  domains:
+  - mybluemix.net                 
+  - apic.mybluemix.net            
+  - us-south.cf.appdomain.cloud   
+  - apps.internal
+  host: priar
+  path: target/hello-spring-cloud-0.0.1.BUILD-SNAPSHOT.jar
