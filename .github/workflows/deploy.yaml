@@ -1,5 +1,16 @@
 on:
-  workflow_call
+  workflow_call:
+    secrets:
+      IBM_CLOUD_API_KEY:
+        required: true
+      IBM_CLOUD_CF_API:
+        required: true
+      IBM_CLOUD_CF_ORG:
+        required: true
+      IBM_CLOUD_CF_SPACE:
+        required: true
+      JF_ARTIFACTORY_1:
+        required: true
 
 jobs:
   deploy:
