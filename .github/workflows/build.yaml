@@ -42,4 +42,4 @@ jobs:
             jfrog c use priar
             jfrog rt ping
             echo '${{ github.workspace }}/target/*.jar'
-            jfrog rt upload --flat=false '${{ github.workspace }}/target/*.jar' priar/
+            jfrog rt upload --flat=false '${{ github.workspace }}/target/' priar/
